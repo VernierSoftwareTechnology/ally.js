@@ -1,6 +1,6 @@
 ---
 layout: doc-api.html
-tags: shadow-dom, service, argument-options
+tags: shadow-dom, service, argument-options, content-document
 ---
 
 # ally.maintain.disabled
@@ -47,6 +47,11 @@ A [`<service>`](../concepts.md#Service) interface, providing the `handle.disenga
 ## Examples
 
 * **EXAMPLE:** [`ally.maintain.disabled` Example](./disabled.example.html)
+
+
+## Changes
+
+* Since `v#master` `options.context` resolves to the content document for `<iframe>` and `<object>` elements.
 
 
 ## Notes

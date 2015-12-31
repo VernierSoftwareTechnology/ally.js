@@ -18,6 +18,7 @@
 import nodeArray from '../util/node-array';
 import queryFocusable from '../query/focusable';
 import elementDisabled from '../element/disabled';
+import getContentDocument from '../util/get-content-document';
 import {getParentComparator} from '../util/compare-position';
 
 function makeElementInert(element) {
@@ -38,6 +39,7 @@ const observerConfig = {
 class InertSubtree {
   constructor({context, filter} = {}) {
     this._context = nodeArray(context || document.documentElement)[0];
+    this._context = getContentDocument(this._context) || this._context;
     this._filter = nodeArray(filter);
 
     this.disengage = this.disengage.bind(this);
