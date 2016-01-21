@@ -4,6 +4,8 @@ define([
 
   config.capabilities = {
     project: 'ally.js',
+    // host mapping as instructed by Umang Sardesai of BrowserStack support
+    'browserstack.hosts': '127.0.0.1,go.microsoft.com;127.0.0.1,iecvlist.microsoft.com;127.0.0.1,ieonline.microsoft.com;127.0.01,redirector.gvt1.com',
     // 'browserstack.debug': true,
     // 'browserstack.video': true,
     // 'browserstack.ie.noFlash': true,
