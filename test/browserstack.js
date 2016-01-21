@@ -40,7 +40,7 @@ define([
   // https://theintern.github.io/intern/#option-maxConcurrency
   // OpenSauce allows 5 concurrent VMs
   //config.maxConcurrency = 5;
-  config.maxConcurrency = 2;
+  config.maxConcurrency = 1;
   // https://theintern.github.io/intern/#option-tunnel
   config.tunnel = 'BrowserStackTunnel';
 
