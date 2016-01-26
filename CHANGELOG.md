@@ -41,7 +41,7 @@ The following lists show the changes to the library grouped by domain.
 * fixing [`ally.get.focusTarget`][ally/get/focus-target] to resolve elements redirecting focus to other elements
 * fixing [`ally.is.tabbable`][ally/is/tabbable] to consider `<iframe>` elements not tabbable
 * fixing [`ally.is.onlyTabbable`][ally/is/only-tabbable] to not consider `<object>` elements only tabbable anymore
-
+* adding option `includeOnlyTabbable` to [`ally.query.firstTabbable`][ally/query/first-tabbable], [`ally.query.focusable`][ally/query/focusable], [`ally.query.tabbable`][ally/query/tabbable], [`ally.query.tabsequence`][ally/query/tabsequence] - [issue #100](https://github.com/medialize/ally.js/issues/100)
 
 #### Keyboard support
 
